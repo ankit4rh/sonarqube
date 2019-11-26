@@ -1,5 +1,5 @@
 # sonarqube
-sonarqube installation and configuration using docker-compose
+SonarQube Installation and Configuration using docker-compose
 
 
 
