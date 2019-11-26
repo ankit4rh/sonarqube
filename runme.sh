@@ -25,7 +25,7 @@ sudo sysctl -w vm.max_map_count=262144
 
 #installing node 
 sudo apt-get install nodejs  -y
-sudo apt-get install npm  -y
+sudo apt-get install npm  
 node -v
 
 #upgrading node version in case lower version of node is installed
