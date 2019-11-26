@@ -15,7 +15,7 @@ Make sure you're inside "sonarqube" directory
 >Navigate to code_directory
 cd  sonar-scanner-4.2.0.1873-linux/bin/code_directory/
 
-here:
+For Example:
 git pull https://github.com/microsoft/TypeScriptSamples.git
 
 
