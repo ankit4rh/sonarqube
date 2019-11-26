@@ -3,7 +3,7 @@ sonarqube installation and configuration using docker-compose
 
 
 
-To run SonarScanner:
+SonarScanner Syntax:
 ~~~~~~~~~~~~~~~~~~
 ./sonar_executable    -X    -Dsonar.host.url=http://IP_Address:9000    -Dsonar.username=admin   -Dsonar.password=admin   -Dsonar.projectName=project_1   -Dsonar.projectVersion=1   -Dsonar.projectKey=project_1   -Dsonar.sources=location_of_source_code
 
@@ -11,8 +11,11 @@ To run SonarScanner:
 
 Pull Your Source code from Git
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Navigate to  /code_directory/your_project_dir
-then:
+Make sure you're inside "sonarqube" directory
+>Navigate to code_directory
+cd  sonar-scanner-4.2.0.1873-linux/bin/code_directory/
+
+here:
 git pull https://github.com/microsoft/TypeScriptSamples.git
 
 
@@ -26,6 +29,7 @@ cd sonarqube/sonar-scanner-4.2.0.1873-linux/bin/
 Running Sonarscanner
 ~~~~~~~~~~~~~~~~~~~
 ./sonar-scanner    -X    -Dsonar.host.url=http://0.0.0.0:9000    -Dsonar.username=admin   -Dsonar.password=admin   -Dsonar.projectName=myproject   -Dsonar.projectVersion=1   -Dsonar.projectKey=myproject   -Dsonar.sources=code_directory/TypeScriptSamples   -Dsonar.language=ts
+
 
 
 
