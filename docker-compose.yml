@@ -2,8 +2,8 @@ version: "2"
 
 services:
   sonarqube:
-#    image: sonarqube:lts-alpine
-#    image: sonarqube:7.1-alpine
+    container_name: "sonarqube"      
+    restart: always
     image: sonarqube:latest
     expose:
       - 9000
@@ -22,6 +22,8 @@ services:
 #      - ./docker_vol/sonarqube_bundled-plugins:/opt/sonarqube/lib/bundled-plugins
 
   db:
+    container_name: db
+    restart: always
     image: postgres:10.5-alpine
     networks:
       - sonarnet

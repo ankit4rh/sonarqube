@@ -11,7 +11,7 @@ sudo apt install zip -y > /dev/null
 
 
 #Extract the file
-sudo unzip -q sonar-scanner-cli-4.2.0.1873-linux.zip  > /dev/null
+sudo unzip -q sonar-scanner-cli-4.2.0.1873-linux.zip 
 
 #deleting the zipped archive:
 sudo rm sonar-scanner-cli-4.2.0.1873-linux.zip  > /dev/null
@@ -25,7 +25,7 @@ sudo sysctl -w vm.max_map_count=262144
 
 #installing node 
 sudo apt-get install nodejs  -y
-sudo apt-get install npm  
+sudo apt-get install npm -y 
 node -v
 
 #upgrading node version in case lower version of node is installed
@@ -51,10 +51,8 @@ docker-compose up -d
 
 
 
-
-
-
-#sudo chown -R ubuntu:ubuntu sonarqube/
+#changing ownership
+sudo chown -R ubuntu:ubuntu ../sonarqube/
 
 
 
