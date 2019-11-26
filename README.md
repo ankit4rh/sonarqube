@@ -32,7 +32,8 @@ Running Sonarscanner
 
 
 
-
+ERROR_1
+~~~~~~~
 #In case you get the following SCM Error: 
 13:39:31.519 INFO: 0 files indexed
 13:39:31.523 INFO: 0 files ignored because of scm ignore settings
@@ -52,5 +53,12 @@ password:admin
 
 >>Rerun you scanner
 
+
+ERROR_2
+~~~~~~~
+If the sonarqube container is failing again and again
+step 1> docker-compose down
+step 2> rm -rf postgresql  postgresql_data
+step_3> docker-compose up -d
 
 
