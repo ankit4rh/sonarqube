@@ -16,13 +16,13 @@ Make sure you're inside "sonarqube" directory
 cd  sonar-scanner-4.2.0.1873-linux/bin/code_directory/
 
 For Example:
-git pull https://github.com/microsoft/TypeScriptSamples.git
+git clone https://github.com/microsoft/TypeScriptSamples.git
 
 
 
 Now Navigate to sonarqube executable
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-cd sonarqube/sonar-scanner-4.2.0.1873-linux/bin/
+cd ..
 
 
 

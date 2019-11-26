@@ -56,7 +56,7 @@ docker-compose up -d
 
 
 echo -e "\n\nFixing ownership \n"
-sudo chown -R ubuntu:ubuntu ../sonarqube/
+#sudo chown -R ubuntu:ubuntu ../sonarqube/
 
 
 
